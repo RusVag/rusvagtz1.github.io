@@ -1,0 +1,66 @@
+.CB_label {
+    width: 39px; /* Ширина рисунка */
+    height: 37px; /* Высота рисунка */
+    display: block; /* Блочный элемент */
+    position: relative; /* Относительное позиционирование */
+}
+.CBox[type="checkbox"]{
+    display: none;
+}
+.CBox[type="checkbox"] + .CB_icon {
+    position: absolute; /* Абсолютное позиционирование */
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background: url(/svg/checkbox.svg) no-repeat; /* Фоновый рисунок */
+    cursor: pointer; /* Курсор в виде руки */
+}
+.CBox[type="checkbox"]:checked + .CB_icon  	{
+    background-position: 0 0;
+    background: url(/svg/checktick.svg) no-repeat;
+}
+
+.CB_text{
+    margin-left: 4vw;
+    font-family: Prata;
+    font-size: 2vw;
+    user-select: none;
+    margin-top: 2vw;
+
+}
+
+@media(max-width: 1440px){
+    .CB_text{
+        margin-left: 5vw;
+    }
+    .CB_icon{
+        margin-top: -0.2vw;
+    }
+}
+
+@media(max-width: 1024px){
+    .CB_text{
+        margin-left: 5vw;
+    }
+    .CB_icon{
+        margin-top: -0.7vw;
+    }
+}
+
+@media(max-width:768px){
+    .CB_text{
+        margin-left: 8vw;
+        font-size: 5vw;
+    }
+    .CB_icon{
+        margin-top: 0.7vw;
+    }
+}
+@media(max-width:425px){
+    .CB_text{
+        margin-left: 12vw;
+        font-size: 8vw;
+    }
+    .CB_icon{
+        margin-top: 0.7vw;
+    }
+}

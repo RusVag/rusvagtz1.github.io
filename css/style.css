@@ -1,0 +1,808 @@
+@font-face {
+    font-family: Prata;
+    src: url(/font/Prata-Regular.ttf);
+}
+*{
+    transition: all 0s;
+}
+body{
+    background-color: rgb(32, 54, 54);
+    color: white;
+    margin: 0;
+    font-family: Prata;
+    position: relative;
+}
+header{
+    position: fixed;
+    z-index: 10;
+    padding: 1vw 9.8vw;
+    background-color: rgba(0, 0, 0, 0);
+    transition-duration: 0.3s;
+    width: 83vw;
+    display: flex;
+    gap: 4vw;
+    top: 0vw;
+    
+    a{          
+        display: inline-flex;
+        text-decoration: none;
+        color: white;
+        align-items: center;
+        
+        h1{
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+            background-attachment: fixed;
+            background-image: url(/img/gold.webp);
+            margin: 0vw;
+            padding: 0vw;
+        }
+        
+        h5{
+            margin: 0vw;
+            padding: 0vw;
+            font-style: italic;
+        }
+    }
+}
+
+#imgOne{
+    position: absolute;
+    z-index: -1;
+    object-fit: cover;
+    min-width: 40vw;
+    max-width: 40.6vw;
+    height: 100vh;
+    right: 0vw;
+    top: -17vh;
+}
+
+#divOne{
+    width: 40vw;
+    margin: 8.45vw 0 0 10vw;
+}
+
+#pOne{
+    margin: 0;
+    font-size: 4.5vw;
+    color: wheat;
+}
+
+#pTwo{
+    font-size: 3vw;
+    margin: 1vw 0 0 4vw;
+    color: wheat;
+
+}
+
+#bttnOne{
+    font-size: 1.5vw;
+    margin: 2vw 0 0 0;
+    padding: 1.5vw 2.1vw 1.5vw 2.1vw;
+    border-radius: 1vw;
+    border-width: 0.1vw;
+    font-weight: 700;
+    color: darkslategray;
+    border-color: rgb(84, 148, 148);
+
+}
+#bttnOne::after:active{
+    pointer-events: all;
+    transition: all 4s;
+    border-width: 0.1vw;
+    border-color: rgb(84, 148, 148);
+    padding: 1.5vw 2.1vw 1.5vw 2.1vw;
+
+}
+#bttnOne:active{
+    margin: 2vw 0 0 0;
+    padding: 1.4vw 2.4vw 1.4vw 2.5vw;
+
+    background-color: rgb(177, 177, 177);
+    border-width: 0.4vw;
+    border-color: rgb(84, 148, 148);
+    font-size: 1.1vw;
+}
+
+
+
+
+
+
+/* ---------------------------- */
+
+
+
+#ptTwoDiv{
+    display: flex;
+    position: relative;
+    margin: 20rem 0 0 0;
+    padding: 0;
+    ul{
+        max-width: 33.5vw;
+        margin-left: 2vw;
+        li{
+            padding-left: 0.5vw;
+            text-align: center;
+            list-style-image: url(/svg/Exclude.svg);
+            
+        }
+    }
+}
+#imgTwo{
+    display: inline-flex;
+    position: absolute;
+    z-index: -1;
+    object-fit: cover;
+    min-width: 10vw;
+    max-width: 30vw;
+    height: 100vh;
+    right: 69.45vw;
+
+}
+#imgThree{
+    display: inline-flex;
+    position: absolute;
+    z-index: -1;
+    object-fit: cover;
+    min-width: 10vw;
+    max-width: 30vw;
+    height: 100vh;
+    right: 0;
+}
+
+#ptTwoText{
+    display: inline-flex;
+    position: absolute;
+    font-size: 1.7vw;
+    max-width: 45vw;
+    min-width: 20vw;
+    height: 100vw;
+    background-color: rgb(32, 54, 54);
+    right: 29vw;
+    left: 29vw;
+    
+}
+
+
+
+
+
+@media(max-width: 1440px){
+    header{
+        width: 90vw;
+        padding: 1vw 0vw 1vw 10vw;
+        gap: 3vw;
+
+        span{
+            font-size: 1px;
+            visibility: hidden;
+            padding: 0 5vw 0 0;
+        }
+
+        a h5{
+            font-size: 0.8vw;
+        }
+    }
+
+    #imgOne{
+        height: 100vh;
+        right: 0vw;
+        top: -14.5vh;
+    }
+    #imgTwo{
+        right: 70vw;
+    }
+
+    #ptTwoDiv{
+        display: flex;
+        position: relative;
+        margin: 30rem 0 0 0;
+        padding: 0;
+
+    }
+    #ptTwoText{
+        max-width: 45vw;
+        min-width: 20vw;
+        height: 100vw;
+        background-color: rgb(32, 54, 54);
+        right: 35vw;
+        left: 28vw;
+        
+    }
+}
+
+
+
+
+@media(max-width: 1024px){
+    header{
+        width: 90vw;
+        padding: 1vw 0vw 1vw 10vw;
+        gap: 3vw;
+
+        span{
+            font-size: 1px;
+            visibility: hidden;
+            padding: 0 0vw 0 0;
+        }
+
+        a h5{
+            font-size: 1vw;
+        }
+    }
+
+    #imgOne{
+        height: 100vh;
+        right: 0vw;
+        top: -24.3vh;
+    }
+
+    #divOne{
+        margin: 20vw 0 0 10vw;
+    }
+
+
+
+
+    #ptTwoDiv{
+        all: initial;
+        position: relative;
+        top: 10vh;
+
+    }
+    #imgTwo{
+        all: initial;
+
+        z-index: -1;
+        position: absolute;
+        left: 0vw;
+        top: 17vh;
+        clip-path: inset(25rem 0 20rem 0);
+    
+    }
+    #imgThree{
+        all: initial;
+
+        z-index: -1;
+        position: absolute;
+        left: 0vw;
+        top: -10rem;
+        clip-path: inset(25rem 0 20rem 0);
+        
+    }
+    #ptTwoText{
+        all: initial;
+        position: absolute;
+        font-family: Prata;
+        color: white;
+        font-size: 2.3vw;
+        top: 29vh;
+        left: 2.8vw;
+        ul{
+            gap: 5vw;
+            min-width: 80vw;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            background-color: rgba(0, 0, 0, 0.562);
+            backdrop-filter: sepia(100%);
+            padding: 3vw 0vw 4vw 10vw;
+
+            li{
+                width: 32vw;
+                list-style-image: url(/svg/Exclude.svg);
+            }
+            hr{
+                display: none;
+            }
+        }
+    }
+
+}
+
+@media(max-width: 768px){
+    header{
+        width: 124vw;
+        gap: 6vw;
+        a{          
+            h1{
+                font-size: 7vw;
+            }
+            
+            h5{
+                font-size: 2.5vw;
+            }
+        }
+    }
+    #imgOne{
+        all: initial;
+
+        z-index: -1;
+        position: absolute;
+        top: -20vw;
+        clip-path: inset(10vw 0 12.25rem 0);
+
+    }
+    #divOne{
+        width: 100vw;
+        margin: 0vw 0 0 0vw;
+        padding: 16vh 9.5vw 5vh 24vw;
+        background-color: rgba(0, 0, 0, 0.562);
+        backdrop-filter: sepia(100%);
+    }
+
+    
+    #pOne{
+        margin: 0;
+        font-size: 10vw;
+        color: wheat;
+    }
+    
+    #pTwo{
+        font-size: 8vw;
+        margin: 1vw 0 0 4vw;
+        color: wheat;
+    
+    }
+
+
+    #bttnOne{
+        font-size: 4vw;
+        margin: 6vw 0 0 0;
+        padding: 4vw 6vw 4vw 6vw;
+        border-radius: 1vw;
+        border-width: 0.1vw;
+        /* font-weight: 700; */
+        /* color: darkslategray; */
+        /* border-color: rgb(84, 148, 148); */
+    
+    }
+    #bttnOne::after:active{
+        pointer-events: all;
+        transition: all 4s;
+        border-width: 0.1vw;
+        border-color: rgb(84, 148, 148);
+        padding: 4vw 6vw 4vw 6vw;
+    
+    }
+    #bttnOne:active{
+        margin: 6vw 0 0 0;
+        padding: 4vw 7vw 3.61vw 7vw;
+    
+        background-color: rgb(177, 177, 177);
+        border-width: 1vw 1vw 1vw 1vw;
+        border-color: rgb(84, 148, 148);
+        font-size: 3vw;
+    }
+
+        #imgTwo{
+        all: initial;
+
+        z-index: -1;
+        position: absolute;
+        left: 0vw;
+        top: -21.5vh;
+        clip-path: inset(25rem 0 20rem 0);
+    }
+    #imgThree{
+        all: initial;
+
+        z-index: -1;
+        position: absolute;
+        left: 0vw;
+        top: -30.3rem;
+        clip-path: inset(25rem 0 20rem 0);
+        
+    }
+    #ptTwoText{
+        all: initial;
+        position: absolute;
+        font-family: Prata;
+        color: white;
+        font-size: 3.5vw;
+        top: -13.3vh;
+        left: -2vw;
+        ul{
+            gap: 8vw;
+            min-width: 123.3vw;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            background-color: rgba(0, 0, 0, 0.562);
+            backdrop-filter: sepia(100%);
+            padding: 3vw 0vw 11.74vw 10vw;
+
+            li{
+                width: 56vw;
+                list-style-image: url(/svg/Exclude.svg);
+            }
+            hr{
+                display: none;
+            }
+        }
+    }
+}
+
+@media(max-width: 425px){
+    header{
+        width: 70rem;
+        gap: 6vw;
+        padding: 5vw 0 5vw 5vw;
+        a{          
+            h1{
+                font-size: 20vw;
+            }
+            
+            h5{
+                font-size: 5vw;
+            }
+        }
+    }
+    #imgOne{
+        all: initial;
+
+        z-index: -1;
+        position: absolute;
+        top: -40vw;
+        clip-path: inset(10vw 0 12.25rem 0);
+
+    }
+    #divOne{
+        width: 140vw;
+        margin: 0vw 0 0 0vw;
+        padding: 39vw 77vw 19.5vw 24vw;
+        background-color: rgba(0, 0, 0, 0.562);
+        backdrop-filter: sepia(100%);
+    }
+
+    
+    #pOne{
+        margin: 0;
+        font-size: 16vw;
+        color: wheat;
+    }
+    
+    #pTwo{
+        font-size: 12vw;
+        margin: 1vw 0 0 4vw;
+        color: wheat;
+    
+    }
+
+
+    #bttnOne{
+        font-size: 6vw;
+        margin: 6vw 0 0 0;
+        padding: 6vw 8vw 6vw 8vw;
+        border-radius: 2vw;
+        border-width: 0.1vw;
+        /* font-weight: 700; */
+        /* color: darkslategray; */
+        /* border-color: rgb(84, 148, 148); */
+    
+    }
+    #bttnOne::after:active{
+        pointer-events: all;
+        transition: all 4s;
+        border-width: 0.1vw;
+        border-color: rgb(84, 148, 148);
+        padding: 6vw 8vw 6vw 8vw;
+    
+    }
+    #bttnOne:active{
+        margin: 6vw 0 0 0;
+        padding: 6vw 9vw 5.55vw 9vw;
+    
+        background-color: rgb(177, 177, 177);
+        border-width: 1vw 1vw 1vw 1vw;
+        border-color: rgb(84, 148, 148);
+        font-size: 5vw;
+    }
+
+        #imgTwo{
+        all: initial;
+
+        z-index: -1;
+        position: absolute;
+        left: 0vw;
+        top: -27vh;
+        clip-path: inset(100vw 0 20rem 0);
+    }
+    #imgThree{
+        all: initial;
+
+        z-index: -1;
+        position: absolute;
+        left: 0vw;
+        top: -114vw;
+        clip-path: inset(94vw 0 80vw 0);
+        
+    }
+    #ptTwoText{
+        all: initial;
+        position: absolute;
+        font-family: Prata;
+        color: white;
+        font-size: 5vw;
+        top: -25vw;
+        left: -2vw;
+        ul{
+            gap: 14vw;
+            min-width: 200vw;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            background-color: rgba(0, 0, 0, 0.562);
+            backdrop-filter: sepia(100%);
+            padding: 20vw 11vw 19vw 30vw;
+
+            li{
+                width: 90vw;
+                list-style-image: url(/svg/Exclude.svg);
+            }
+            hr{
+                display: none;
+            }
+        }
+    }
+
+}
+
+
+
+@media(max-width: 375px){
+    header{
+        width: 1000vw;
+        gap: 6vw;
+        padding: 5vw 0 5vw 5vw;
+        a{          
+            h1{
+                font-size: 20vw;
+            }
+            
+            h5{
+                font-size: 5vw;
+            }
+        }
+    }
+    #imgOne{
+        all: initial;
+
+        z-index: -1;
+        position: absolute;
+        top: -40vw;
+        clip-path: inset(10vw 0 12.25rem 0);
+
+    }
+    #divOne{
+        width: 140vw;
+        margin: 0vw 0 0 0vw;
+        padding: 42vw 83vw 38.5vw 50vw;
+        background-color: rgba(0, 0, 0, 0.562);
+        backdrop-filter: sepia(100%);
+    }
+
+    
+    #pOne{
+        margin: 0;
+        font-size: 16vw;
+        color: wheat;
+    }
+    
+    #pTwo{
+        font-size: 12vw;
+        margin: 1vw 0 0 4vw;
+        color: wheat;
+    
+    }
+
+
+    #bttnOne{
+        font-size: 6vw;
+        margin: 6vw 0 0 0;
+        padding: 6vw 8vw 6vw 8vw;
+        border-radius: 2vw;
+        border-width: 0.1vw;
+        /* font-weight: 700; */
+        /* color: darkslategray; */
+        /* border-color: rgb(84, 148, 148); */
+    
+    }
+    #bttnOne::after:active{
+        pointer-events: all;
+        transition: all 4s;
+        border-width: 0.1vw;
+        border-color: rgb(84, 148, 148);
+        padding: 6vw 8vw 6vw 8vw;
+    
+    }
+    #bttnOne:active{
+        margin: 6vw 0 0 0;
+        padding: 6vw 9vw 5.55vw 9vw;
+    
+        background-color: rgb(177, 177, 177);
+        border-width: 1vw 1vw 1vw 1vw;
+        border-color: rgb(84, 148, 148);
+        font-size: 5vw;
+    }
+
+    #imgTwo{
+        all: initial;
+
+        z-index: -1;
+        position: absolute;
+        left: 0vw;
+        top: -23.5vw;
+        clip-path: inset(100vw 0 20rem 0);
+    }
+    #imgThree{
+        all: initial;
+
+        z-index: -1;
+        position: absolute;
+        left: 0vw;
+        top: -116.5vw;
+        clip-path: inset(94vw 0 80vw 0);
+        
+    }
+    #ptTwoText{
+        all: initial;
+        position: absolute;
+        font-family: Prata;
+        color: white;
+        font-size: 7vw;
+        top: -30vw;
+        left: -2vw;
+        ul{
+            gap: 14vw;
+            min-width: 240vw;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            background-color: rgba(0, 0, 0, 0.562);
+            backdrop-filter: sepia(100%);
+            padding: 20vw 3vw 40vw 30vw;
+
+            li{
+                width: 110vw;
+                list-style-image: url(/svg/Exclude.svg);
+            }
+            hr{
+                display: none;
+            }
+        }
+    }
+
+}
+@media(max-width: 320px){
+    header{
+        width: 500vw;
+        gap: 6vw;
+        padding: 5vw 0 5vw 5vw;
+        a{  
+            span{padding-right: 500rem;}
+            h1{
+                font-size: 20vw;
+            }
+            
+            h5{
+                font-size: 5vw;
+            }
+        }
+    }
+    #imgOne{
+        all: initial;
+
+        z-index: -1;
+        position: absolute;
+        top: -40vw;
+        clip-path: inset(10vw 0 12.25rem 0);
+
+    }
+    #divOne{
+        width: 140vw;
+        margin: 0vw 0 0 0vw;
+        padding: 42vw 100vw 71.5vw 80vw;
+        background-color: rgba(0, 0, 0, 0.562);
+        backdrop-filter: sepia(100%);
+    }
+
+    
+    #pOne{
+        margin: 0;
+        font-size: 16vw;
+        color: wheat;
+    }
+    
+    #pTwo{
+        font-size: 12vw;
+        margin: 1vw 0 0 4vw;
+        color: wheat;
+    
+    }
+
+
+    #bttnOne{
+        font-size: 6vw;
+        margin: 6vw 0 0 0;
+        padding: 6vw 8vw 6vw 8vw;
+        border-radius: 2vw;
+        border-width: 0.1vw;
+        /* font-weight: 700; */
+        /* color: darkslategray; */
+        /* border-color: rgb(84, 148, 148); */
+    
+    }
+    #bttnOne::after:active{
+        pointer-events: all;
+        transition: all 4s;
+        border-width: 0.1vw;
+        border-color: rgb(84, 148, 148);
+        padding: 6vw 8vw 6vw 8vw;
+    
+    }
+    #bttnOne:active{
+        margin: 6vw 0 0 0;
+        padding: 6vw 9vw 5.55vw 9vw;
+    
+        background-color: rgb(177, 177, 177);
+        border-width: 1vw 1vw 1vw 1vw;
+        border-color: rgb(84, 148, 148);
+        font-size: 5vw;
+    }
+
+    #imgTwo{
+        all: initial;
+
+        z-index: -1;
+        position: absolute;
+        left: 0vw;
+        top: 20vw;
+        clip-path: inset(100vw 0 20rem 0);
+    }
+    #imgThree{
+        all: initial;
+
+        z-index: -1;
+        position: absolute;
+        left: 0vw;
+        top: -120vw;
+        clip-path: inset(94vw 0 80vw 0);
+        
+    }
+    #ptTwoText{
+        all: initial;
+        position: absolute;
+        font-family: Prata;
+        color: white;
+        font-size: 9vw;
+        top: -36vw;
+        left: -2vw;
+        ul{
+            gap: 14vw;
+            min-width: 287vw;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            background-color: rgba(0, 0, 0, 0.562);
+            backdrop-filter: sepia(100%);
+            padding: 40vw 8vw 72.5vw 25vw;
+
+            li{
+                width: 130vw;
+                list-style-image: url(/svg/Exclude.svg);
+            }
+            hr{
+                display: none;
+            }
+        }
+    }
+
+}
